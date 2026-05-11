@@ -25,7 +25,7 @@ While it is still a work in progress, it will be heavily inspired by the work do
 As with any romhack / rendition of this francise with all the pokemon, Arcus will be the final mon to be caught by the player due to a heavy emphasis on it's role as a creator who does not wish to muddle with the mortal pla in fear of destabllisng it. 
 #### Structures
 Every legendary will have a structure, here are the current plans:
-    - Yveltal: located with the caccon of death, found in soul sand valleys
-    - Xerneas: found in the tree of life, located in the new biome, the hallow
+-Yveltal: located with the caccon of death, found in soul sand valleys
+- Xerneas: found in the tree of life, located in the new biome, the hallow
 To further this list, each key trainer will have either their own strcuture of be closly tied to a ledgendary
 

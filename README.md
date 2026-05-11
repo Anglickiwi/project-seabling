@@ -1,2 +1,2 @@
 # project-seabling
-Seabling mon is a difficultly and expliration packed based in Cobblemon
+Seabling mon is a difficultly and exploration packed based in Cobblemon

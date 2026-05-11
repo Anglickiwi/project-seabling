@@ -1,0 +1,99 @@
+{
+  "temperature": 0,
+  "downfall": 256,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "effects": {
+    "sky_color": 2,
+    "fog_color": 2,
+    "water_color": 11245182,
+    "water_fog_color": 6512212,
+    "grass_color": 5788477,
+    "mood_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley.mood",
+      "tick_delay": 0,
+      "block_search_extent": 0,
+      "offset": 0
+    },
+    "music": {
+      "sound": "minecraft:ambient.basalt_deltas.loop",
+      "min_delay": 0,
+      "max_delay": 0,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:falling_dust",
+        "block_state": {
+          "Name": "minecraft:soul_sand"
+        }
+      },
+      "probability": 0
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "surface_builder": "seabling:testbiome",
+  "carvers": {
+    "air": [
+      "minecraft:cave_extra_underground"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground",
+      "minecraft:lake_lava_surface"
+    ],
+    [],
+    [
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [],
+    [],
+    [
+      "minecraft:blackstone_blobs",
+      "minecraft:basalt_blobs",
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
+    ],
+    [],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_delta"
+    ],
+    [
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal"
+    ],
+    []
+  ]
+}

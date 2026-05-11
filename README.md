@@ -10,7 +10,6 @@ Currently the pack is developed using kubejs as a base to allow gloabl loading o
         - Gym party caps: when facing a gym leader, you cannot have more team memebers than the gym leader.
         - To respect the title of champion, the teams will be drawn from the irl pokemon word championship master divsion                champion teams.    
     - Mainline: designed to be onpar with the the more tradtional challenge curve of the Pokemon series.
-        - 
 ### Gym Leaders
 - 18 custom gym leaders with 4 different teams for different badge stages.
     - To advance to the elite 4, only 8 trainers need to be defated, but all can be challenged.

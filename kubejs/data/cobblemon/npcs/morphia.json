@@ -25,7 +25,7 @@
     "canChallenge": true
   },
   "canDespawn": false,
-  "skill": 10,
+  "skill": 5,
   "autoHealParty": true,
   "randomizePartyOrder": false,
   "hideNameTag": false,

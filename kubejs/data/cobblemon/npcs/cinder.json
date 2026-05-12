@@ -1,6 +1,6 @@
 {
   "hitbox": "player",
-  "resourceIdentifier": "cobblemon:barry",
+  "resourceIdentifier": "cobblemon:cinder",
   "presets": [
     "cobblemon:standard_npc"
   ],
@@ -15,7 +15,7 @@
     }
   ],
   "names": [
-    "Barry"
+    "Cinder"
   ],
   "interaction": {
     "type": "dialogue",
@@ -33,7 +33,7 @@
   "isInvulnerable": true,
   "party": {
     "type": "script",
-    "script": "cobblemon:barry_team",
+    "script": "cobblemon:cinder_team",
     "isStatic": false
   }
 }

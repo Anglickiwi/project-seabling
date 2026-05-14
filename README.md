@@ -29,5 +29,5 @@ Every legendary will have a structure, here are the current plans:
 - Xerneas: found in the tree of life, located in the new biome, the hallow
 
 
-To further this list, each key trainer will have either their own strcuture of be closly tied to a ledgendary
+
 

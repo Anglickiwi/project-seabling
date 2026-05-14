@@ -27,5 +27,7 @@ As with any romhack / rendition of this francise with all the pokemon, Arcus wil
 Every legendary will have a structure, here are the current plans:
 - Yveltal: located with the caccon of death, found in soul sand valleys
 - Xerneas: found in the tree of life, located in the new biome, the hallow
+
+
 To further this list, each key trainer will have either their own strcuture of be closly tied to a ledgendary
 

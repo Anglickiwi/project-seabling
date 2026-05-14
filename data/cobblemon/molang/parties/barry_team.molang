@@ -1,0 +1,145 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    ursaluna 
+    bloodmoon  
+    moves=moonblast,calmmind,earthpower,bloodmoon 
+    nature=quiet 
+    ability=mindseye  
+    held_item=cobblemon:life_orb 
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=0 
+
+    hp_ev=252  
+    attack_ev=0  
+    defense_ev=0  
+    special_attack_ev=252  
+    special_defense_ev=4  
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    porygon2  
+    moves=recover,trickroom,electroweb,triattack  
+    nature=relaxed 
+    ability=download    
+    held_item=cobblemon:eviolite 
+
+    hp_iv=31 
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=0  
+
+    hp_ev=252 
+    attack_ev=0  
+    defense_ev=96 
+    special_attack_ev=4  
+    special_defense_ev=156  
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    farigiraf 
+    moves=meanlook,expandingforce,nastyplot,twinbeam 
+    nature=quiet 
+    ability=armortail 
+    held_item=cobblemon:twisted_spoon 
+
+    hp_iv=31  
+    attack_iv=0  
+    defense_iv=31  
+    special_attack_iv=31  
+    special_defense_iv=31  
+    speed_iv=0  
+
+    hp_ev=252  
+    attack_ev=0  
+    defense_ev=4 
+    special_attack_ev=252  
+    special_defense_ev=0  
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    indeedee 
+    gender=female  
+    moves=trickroom,dazzlinggleam,followme,healpluse  
+    nature=relaxed 
+    ability=psychicsurge  
+    held_item=cobblemon:terrain_extender 
+
+    hp_iv=31 
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=0 
+
+    hp_ev=252 
+    attack_ev=0 
+    defense_ev=236
+    special_attack_ev=0 
+    special_defense_ev=20
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    snorlax 
+    moves=heatcrash,ironhead,protect,earthquake 
+    nature=brave 
+    ability=thickfat 
+    held_item=cobblemon:leftovers 
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=0 
+
+    hp_ev=252 
+    attack_ev=252 
+    defense_ev=4 
+    special_attack_ev=0  
+    special_defense_ev=0 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    arboliva 
+    moves=energyball,helpinghand,protect,pollenpuff 
+    nature=sassy 
+    ability=harvest  
+    held_item=cobblemon:sitrus_berry 
+
+    hp_iv=31  
+    attack_iv=0  
+    defense_iv=31  
+    special_attack_iv=31  
+    special_defense_iv=31  
+    speed_iv=0  
+
+    hp_ev=248  
+    attack_ev=0  
+    defense_ev=4 
+    special_attack_ev=8  
+    special_defense_ev=252 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);

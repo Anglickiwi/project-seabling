@@ -73,10 +73,11 @@ q.party.add_by_properties('
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    cinderace
-    moves=pyroball,willowisp,suckerpunch,uturn 
-    nature=jolly 
-    ability=libero  
+    rotom
+    appliance=heat  
+    moves=lightscreen,electroweb,protect,toxic 
+    nature=timid 
+    ability=levitate  
     held_item=cobblemon:safety_goggles
 
     hp_iv=31  
@@ -86,11 +87,11 @@ q.party.add_by_properties('
     special_defense_iv=31  
     speed_iv=31  
 
-    hp_ev=0  
+    hp_ev=248  
     attack_ev=0  
     defense_ev=0 
-    special_attack_ev=252  
-    special_defense_ev=4 
+    special_attack_ev=8  
+    special_defense_ev=0 
     speed_ev=252 
 
     level=' + t.pokemon_level

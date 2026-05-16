@@ -4,7 +4,7 @@
     {
         "aspects":[],
         "poser":"cobblemon:standard",
-        "model":"cobblemon:alex.geo",
+        "model":"cobblemon:steve.geo",
         "texture":"cobblemon:textures/npcs/barry.png",
         "layers":[]
         }

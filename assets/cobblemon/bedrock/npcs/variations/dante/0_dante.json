@@ -1,0 +1,12 @@
+{"name":"cobblemon:dante",
+"order":0,
+"variations":[
+    {
+        "aspects":[],
+        "poser":"cobblemon:standard",
+        "model":"cobblemon:steve.geo",
+        "texture":"cobblemon:textures/npcs/dante.png",
+        "layers":[]
+        }
+        ]
+    }

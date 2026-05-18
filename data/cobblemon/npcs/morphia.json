@@ -19,7 +19,7 @@
   ],
   "interaction": {
     "type": "dialogue",
-    "dialogue": "cobblemon:npc-example"
+    "dialogue": "cobblemon:morphia-interaction"
   },
   "battleConfiguration": {
     "canChallenge": true

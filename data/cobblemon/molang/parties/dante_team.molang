@@ -5,7 +5,7 @@ t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 
 
 q.party.add_by_properties('
     samurott  
-    hisuian=hisuian:1b 
+    hisuian=true 
     moves=drillrun,ceaselessedge,detect,encore 
     nature=jolly  
     ability=sharpness  

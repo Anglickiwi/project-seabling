@@ -1,0 +1,144 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    dracovish  
+    moves=fishiousrend,psychicfangs,cruch,leechlife   
+    nature=jolly  
+    ability=strongjaw  
+    held_item=cobblemon:choice_scarf    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    altaria
+    mega_evolution=mega  
+    moves=tailwind,raindance,roost,hypervoice  
+    nature=bold   
+    ability=pixilate   
+    held_item=mega_showdown:altarianite    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252  
+    attack_ev=0 
+    defense_ev=108  
+    special_attack_ev=4   
+    special_defense_ev=144 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    ragingbolt  
+    moves=thunderclap,thunderwave,hypervoice,dragonpluse  
+    nature=modest  
+    ability=protosynthesis  
+    held_item=mega_showdown:booster_energy    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=4 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    dragonite  
+    moves=extremespeed,icespinner,roost,dragondance 
+    nature=adamant  
+    ability=innerfocus  
+    held_item=cobblemon:heavy_duty_boots    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    hydreigon  
+    moves=flashcannon,dracometeor,roost,uturn  
+    nature=calm  
+    ability=levitate   
+    held_item=cobblemon:life_orb    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=4  
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=0
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    archaludon  
+    moves=aurasphere,electroshot,flashcannon,thunderbolt 
+    nature=modest  
+    ability=stamina  
+    held_item=cobblemon:power_herb    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=128  
+    special_defense_ev=128 
+    speed_ev=220 
+
+    level=' + t.pokemon_level
+);

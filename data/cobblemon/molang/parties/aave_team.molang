@@ -1,0 +1,144 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    annihilape  
+    moves=drainpunch,ragefist,poisonjab,poweruppunch  
+    nature=jolly  
+    ability=innerfocus  
+    held_item=cobblemon:metronome     
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252  
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    chandelure 
+    mega_evolution=mega 
+    moves=protect,shadowball,flamethrower,energyball 
+    nature=timid  
+    ability=infiltrator   
+    held_item=zamega:chandelurite    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    sinistcha  
+    moves=lifedew,strengthsap,scald,ragepowder  
+    nature=bold   
+    ability=hospitality   
+    held_item=cobblemon:eject_button    
+
+    hp_iv=31  
+    attack_iv=0  
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=0 
+    defense_ev=56  
+    special_attack_ev=0  
+    special_defense_ev=200 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    dragapult  
+    moves=dragondarts,uturn,phantomforce,suckerpunch 
+    nature=jolly  
+    ability=clearbody 
+    held_item=cobblemon:assault_vest     
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252  
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    aegislash   
+    moves=kingsshield,autotomize,sacredsword,ironhead 
+    nature=adamant    
+    ability=stancechange   
+    held_item=cobblemon:clear_amulet   
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=148 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=0
+    speed_ev=108 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    cofagrigus  
+    moves=disable,infestation,knockoff,protect 
+    nature=relaxed  
+    ability=mummy  
+    held_item=cobblemon:leftovers    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=248 
+    attack_ev=8 
+    defense_ev=88 
+    special_attack_ev=0  
+    special_defense_ev=164 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);

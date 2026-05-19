@@ -1,0 +1,145 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    metagross
+    mega_evolution=mega  
+    moves=bulletpunch,poweruppunch,stompingtantrum,bodypress 
+    nature=jolly  
+    ability=toughclaws  
+    held_item=mega_showdown:metagrossite    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252  
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    bronzong  
+    moves=stealthrock,gyroball,reflect,lightscreen 
+    nature=sassy   
+    ability=levitate   
+    held_item=cobblemon:light_clay     
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252  
+    attack_ev=4  
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=252 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    goodra
+    hisuian=true 
+    moves=blizzard,flamethrower,thunderbolt,protect 
+    nature=modest   
+    ability=gooey   
+    held_item=cobblemon:leftovers      
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252  
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=4 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    gholdengo   
+    moves=makeitrain,nastyplot,recover,shadowball  
+    nature=modest   
+    ability=goodasgold  
+    held_item=cobblemon:air_balloon     
+
+    hp_iv=31  
+    attack_iv=0  
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252  
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=4 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    scizor  
+    moves=bugbite,bulletpunch,protect,trailblaze  
+    nature=adamant  
+    ability=technician  
+    held_item=cobblemon:life_orb     
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=8  
+    speed_ev=248 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    irontreads  
+    moves=highhorsepower,icespinner,supercellslam,protect   
+    nature=jolly  
+    ability=quarkdrive  
+    held_item=mega_showdown:booster_energy    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252  
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);

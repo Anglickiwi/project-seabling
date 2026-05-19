@@ -1,0 +1,12 @@
+{"name":"cobblemon:aave",
+"order":0,
+"variations":[
+    {
+        "aspects":[],
+        "poser":"cobblemon:standard",
+        "model":"cobblemon:alex.geo",
+        "texture":"cobblemon:textures/npcs/aave.png",
+        "layers":[]
+        }
+        ]
+    }

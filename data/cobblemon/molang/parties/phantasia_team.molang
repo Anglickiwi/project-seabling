@@ -1,0 +1,146 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    Alakazam
+    mega_evolution=mega  
+    moves=shadowball,energyball,expandingforce,nastyplot 
+    nature=timid  
+    ability=trace  
+    held_item=mega_showdown:alakazite    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    indeedee
+    gender=male  
+    moves=encore,protect,triattack,expandingforce 
+    nature=sassy   
+    ability=psychicsurge  
+    held_item=cobblemon:terrain_extender    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=0 
+    defense_ev=156 
+    special_attack_ev=0  
+    special_defense_ev=100 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    espathra  
+    moves=luminacrash,hypervoice,roost,uturn 
+    nature=modest   
+    ability=speedboost  
+    held_item=cobblemon:heavy_duty_boots    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    hatterene  
+    moves=calmmind,gigadrain,expandingforce,mysticalfire  
+    nature=modest   
+    ability=magicbounce   
+    held_item=cobblemon:leftovers     
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=4 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    slowking
+    galarian=true 
+    moves=protect,icebeam,disable,sludgebomb 
+    nature=calm  
+    ability=regenerator  
+    held_item=cobblemon:black_sludge    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=4  
+    special_defense_ev=252 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    gallade  
+    moves=aquacutter,bulkup,sacredsword,psychocut 
+    nature=jolly   
+    ability=sharpness   
+    held_item=cobblemon:life_orb    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252 
+    defense_ev=4 
+    special_attack_ev=0  
+    special_defense_ev=0 
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);

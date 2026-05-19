@@ -1,0 +1,145 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    fluttermane  
+    moves=dazzlinggleam,energyball,shadowball,protect  
+    nature=timid  
+    ability=protosynthesis   
+    held_item=cobblemon:life_orb    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=4 
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    clefairy  
+    moves=followme,encore,thunderwave,moonblast  
+    nature=calm  
+    ability=friendguard  
+    held_item=cobblemon:eviolite    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=248 
+    attack_ev=0 
+    defense_ev=144 
+    special_attack_ev=0  
+    special_defense_ev=116 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    azumarill  
+    moves=bellydrum,aquajet,trailblaze,protect 
+    nature=adamant  
+    ability=hugepower  
+    held_item=cobblemon:leftovers     
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=0
+    speed_ev=4 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    grimmsnarl  
+    moves=partingshot,lightscreen,reflect,spirtbreak 
+    nature=careful  
+    ability=prankster  
+    held_item=cobblemon:sitrus_berry    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=4  
+    defense_ev=148  
+    special_attack_ev=0  
+    special_defense_ev=104 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    ironvaliant  
+    moves=leafblade,brickbreak,psychocut,spirtbreak  
+    nature=jolly  
+    ability=quarkdrive  
+    held_item=mega_showdown:booster_energy    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0   
+    special_defense_ev=4 
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    floette
+    flower=eternal 
+    mega_evolution:mega   
+    moves=lightofruin,wish,protect,gigadrain 
+    nature=timid  
+    ability=fairyaura  
+    held_item=zamega:floettite    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=4  
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=0 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);

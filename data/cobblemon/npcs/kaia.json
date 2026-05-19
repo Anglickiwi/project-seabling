@@ -1,0 +1,39 @@
+{
+  "hitbox": "player",
+  "resourceIdentifier": "cobblemon:kaia",
+  "presets": [
+    "cobblemon:standard_npc"
+  ],
+  "config": [
+    {
+      "variableName": "challenge_distance",
+      "displayName": "cobblemon.npc.challenge_distance",
+      "description": "cobblemon.npc.challenge_distance.description",
+      "type": "NUMBER",
+      "defaultValue": "5"
+      
+    }
+  ],
+  "names": [
+    "Kaia"
+  ],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "cobblemon:npc-example"
+  },
+  "battleConfiguration": {
+    "canChallenge": true
+  },
+  "canDespawn": false,
+  "skill": 5,
+  "autoHealParty": true,
+  "randomizePartyOrder": false,
+  "hideNameTag": false,
+  "isMovable":false,
+  "isInvulnerable": true,
+  "party": {
+    "type": "script",
+    "script": "cobblemon:kaia_team",
+    "isStatic": false
+  }
+}

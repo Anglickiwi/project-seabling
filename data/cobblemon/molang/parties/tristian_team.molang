@@ -51,11 +51,11 @@ q.party.add_by_properties('
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    *pokemon_here*  
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
+    ironhands  
+    moves=drainpunch,supercellslam,stompingtantrum,swordsdance 
+    nature=jolly  
+    ability=quarkdrive  
+    held_item=mega_showdown:booster_energy    
 
     hp_iv=31  
     attack_iv=31 
@@ -64,24 +64,25 @@ q.party.add_by_properties('
     special_defense_iv=31 
     speed_iv=31 
 
-    hp_ev=0 
-    attack_ev=0 
+    hp_ev=96 
+    attack_ev=152 
     defense_ev=0 
     special_attack_ev=0  
-    special_defense_ev=0
-    speed_ev=0 
+    special_defense_ev=8 
+    speed_ev=252 
 
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    *pokemon_here*  
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
+    rotom
+    appliance=wash 
+    moves=willowisp,hydropump,thunderbolt,voltswitch 
+    nature=timid  
+    ability=levitate  
+    held_item=cobblemon:leftovers    
 
     hp_iv=31  
-    attack_iv=31 
+    attack_iv=0 
     defense_iv=31 
     special_attack_iv=31 
     special_defense_iv=31 
@@ -90,21 +91,21 @@ q.party.add_by_properties('
     hp_ev=0 
     attack_ev=0 
     defense_ev=0 
-    special_attack_ev=0  
-    special_defense_ev=0
-    speed_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=4 
+    speed_ev=252 
 
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    *pokemon_here*  
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
+    galvantula  
+    moves=stickyweb,bugbuzz,infestation,leechlife  
+    nature=timid  
+    ability=unnerve   
+    held_item=cobblemon:focus_sash    
 
     hp_iv=31  
-    attack_iv=31 
+    attack_iv=0 
     defense_iv=31 
     special_attack_iv=31 
     special_defense_iv=31 
@@ -113,18 +114,18 @@ q.party.add_by_properties('
     hp_ev=0 
     attack_ev=0 
     defense_ev=0 
-    special_attack_ev=0  
-    special_defense_ev=0
-    speed_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=4 
+    speed_ev=252 
 
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    *pokemon_here*  
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
+    electivire  
+    moves=thunderwave,followme,electroweb,icepunch  
+    nature=hasty   
+    ability=vitalspirit   
+    held_item=cobblemon:safety_goggles    
 
     hp_iv=31  
     attack_iv=31 
@@ -133,12 +134,12 @@ q.party.add_by_properties('
     special_defense_iv=31 
     speed_iv=31 
 
-    hp_ev=0 
-    attack_ev=0 
+    hp_ev=252 
+    attack_ev=4 
     defense_ev=0 
     special_attack_ev=0  
     special_defense_ev=0
-    speed_ev=0 
+    speed_ev=252 
 
     level=' + t.pokemon_level
 );

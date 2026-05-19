@@ -1,0 +1,144 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    araquanid   
+    moves=surf,stickyweb,infestation,leechlife 
+    nature=quiet  
+    ability=waterbubble  
+    held_item=cobblemon:weakness_policy    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=248 
+    attack_ev=8 
+    defense_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=0
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    golisopod
+    mega_evolution=mega  
+    moves=brickbreak,leechlife,poisonjab,liquidation 
+    nature=adamant  
+    ability=emergencyexit  
+    held_item=zamega:golisopite    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=0 
+    speed_ev=4 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    volcarona  
+    moves=quiverdance,fierydance,willowisp,protect  
+    nature=timid  
+    ability=flamebody  
+    held_item=cobblemon:leftovers     
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=248 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=8  
+    special_defense_ev=0 
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    ribombee  
+    moves=dazzlinggleam,sunnyday,tailwind,pollenpuff  
+    nature=timid  
+    ability=shielddust  
+    held_item=cobblemon:focus_sash    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=156 
+    attack_ev=0 
+    defense_ev=48 
+    special_attack_ev=0  
+    special_defense_ev=52
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    kleavor  
+    moves=stoneaxe,xscissor,protect,roost 
+    nature=jolly  
+    ability=sharpness  
+    held_item=cobblemon:life_orb    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252  
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    scolipede  
+    moves=protect,earthquake,xscissor,mortalspin 
+    nature=adamant  
+    ability=speedboost  
+    held_item=cobblemon:black_sludge    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=156 
+    attack_ev=252 
+    defense_ev=28 
+    special_attack_ev=0  
+    special_defense_ev=72
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);

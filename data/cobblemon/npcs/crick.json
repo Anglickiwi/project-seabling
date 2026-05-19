@@ -27,7 +27,7 @@
   "canDespawn": false,
   "skill": 5,
   "autoHealParty": true,
-  "randomizePartyOrder": false,
+  "randomizePartyOrder": true,
   "hideNameTag": false,
   "isMovable":false,
   "isInvulnerable": true,

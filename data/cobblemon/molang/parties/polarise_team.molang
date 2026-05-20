@@ -1,0 +1,145 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    ironbundle  
+    moves=freezedry,icebeam,acrobatics,uturn  
+    nature=naive   
+    ability=quarkdrive  
+    held_item=mega_showdown:booster_energy     
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=4 
+    defense_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=0
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    ninetales
+    alolan=true  
+    moves=auroraveil,disable,toxic,drainingkiss  
+    nature=timid  
+    ability=snowwarning  
+    held_item=cobblemon:heavy_duty_boots     
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=4   
+    special_defense_ev=0
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    arctozolt  
+    moves=thunderbolt,blizzard,freezedry,metorbeam  
+    nature=modest  
+    ability=slushrush  
+    held_item=cobblemon:power_herb    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=248 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=8 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    baxcalibur  
+    moves=scaleshot,dragondance,earthquake,iciclespear  
+    nature=adamant  
+    ability=thermalexchange  
+    held_item=cobblemon:loaded_dice     
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    froslass
+    mega_evolution=mega  
+    moves=ominouswind,blizzard,thunderwave,thunderbolt  
+    nature=timid  
+    ability=snowwarning  
+    held_item=zamega:froslassite     
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    articuno   
+    moves=blizzard,ancientpower,airslash,tailwind  
+    nature=timid  
+    ability=snowcloak  
+    held_item=cobblemon:life_orb     
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=4 
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);

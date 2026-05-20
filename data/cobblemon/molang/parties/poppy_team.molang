@@ -1,0 +1,144 @@
+t.player_highest_level = q.player.party.highest_level;
+t.player_average_level = q.player.party.average_level;
+t.player_average_level_offest_level = q.player.party.highest_level-q.player.party.lowest_level;
+t.pokemon_level = q.player.party.highest_level-q.player.party.lowest_level > 15 ? math.min((q.player.party.highest_level + q.player.party.average_level)/2+t.player_average_level_offest_level,(q.player.party.highest_level + q.player.party.average_level)/1.75) : (q.player.party.highest_level + q.player.party.average_level)/1.9;
+
+q.party.add_by_properties('
+    meganium
+    mega_evolution=mega  
+    moves=synthesis,solarbeam,encore,weatherball  
+    nature=timid  
+    ability=megasol   
+    held_item=zamega:meganiumite    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    brutebonnet  
+    moves=spore,seedbomb,suckerpunch,ragepowder  
+    nature=adamant  
+    ability=protosyntesis  
+    held_item=mega_showdown:booster_energy    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252  
+    attack_ev=0 
+    defense_ev=128 
+    special_attack_ev=0  
+    special_defense_ev=128 
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    rillaboom  
+    moves=fakeout,grassyglide,drumbeating,uturn  
+    nature=naive  
+    ability=grassysurge  
+    held_item=cobblemon:assault_vest     
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    ferrothorn  
+    moves=protect,spikes,leechseed,gyroball  
+    nature=impish  
+    ability=ironbarbs  
+    held_item=cobblemon:rocky_helmet    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=248 
+    attack_ev=120 
+    defense_ev=140  
+    special_attack_ev=0  
+    special_defense_ev=0
+    speed_ev=0 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    meowscarada  
+    moves=flowertrick,uturn,throatcop,quickattack  
+    nature=jolly  
+    ability=protean  
+    held_item=cobblemon:life_orb    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=252 
+    defense_ev=0 
+    special_attack_ev=0  
+    special_defense_ev=4 
+    speed_ev=252 
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    serperior  
+    moves=leafstorm,protect,glare,dragonpluse  
+    nature=hasty  
+    ability=contrary  
+    held_item=cobblemon:miracleseed    
+
+    hp_iv=31  
+    attack_iv=0 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=0 
+    attack_ev=0 
+    defense_ev=4  
+    special_attack_ev=252   
+    special_defense_ev=0
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);

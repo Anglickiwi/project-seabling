@@ -28,13 +28,13 @@ q.party.add_by_properties('
 );
 q.party.add_by_properties('
     genesect   
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
+    moves=technoblast,icebeam,flamethrower,energyball  
+    nature=timid  
+    ability=download   
+    held_item=mega_showdown:chill_drive    
 
     hp_iv=31  
-    attack_iv=31 
+    attack_iv=0 
     defense_iv=31 
     special_attack_iv=31 
     special_defense_iv=31 
@@ -43,100 +43,101 @@ q.party.add_by_properties('
     hp_ev=0 
     attack_ev=0 
     defense_ev=0 
+    special_attack_ev=252   
+    special_defense_ev=4 
+    speed_ev=252  
+
+    level=' + t.pokemon_level
+);
+q.party.add_by_properties('
+    celesteela   
+    moves=heavyslam,leechseed,wideguard,protect  
+    nature=impish  
+    ability=beastboost   
+    held_item=cobblemon:leftovers    
+
+    hp_iv=31  
+    attack_iv=31 
+    defense_iv=31 
+    special_attack_iv=31 
+    special_defense_iv=31 
+    speed_iv=31 
+
+    hp_ev=252  
+    attack_ev=4  
+    defense_ev=168  
     special_attack_ev=0  
-    special_defense_ev=0
+    special_defense_ev=84 
     speed_ev=0 
 
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    *pokemon_here*  
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
+    porygon2  
+    moves=triattack,recover,thunderwave,substitute 
+    nature=calm   
+    ability=download   
+    held_item=cobblemon:eviolite     
 
     hp_iv=31  
-    attack_iv=31 
+    attack_iv=0 
     defense_iv=31 
     special_attack_iv=31 
     special_defense_iv=31 
     speed_iv=31 
 
-    hp_ev=0 
+    hp_ev=252 
     attack_ev=0 
-    defense_ev=0 
+    defense_ev=140 
     special_attack_ev=0  
-    special_defense_ev=0
+    special_defense_ev=116
     speed_ev=0 
 
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    *pokemon_here*  
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
+    deoxys   
+    meteorite_forme=attack 
+    moves=expandingforce,energybeam,flashcannon,icebeam  
+    nature=hasty   
+    ability=pressure  
+    held_item=cobblemon:choice_specs    
 
     hp_iv=31  
-    attack_iv=31 
+    attack_iv=0  
     defense_iv=31 
     special_attack_iv=31 
     special_defense_iv=31 
     speed_iv=31 
 
-    hp_ev=0 
+    hp_ev=4  
     attack_ev=0 
     defense_ev=0 
-    special_attack_ev=0  
+    special_attack_ev=252   
     special_defense_ev=0
-    speed_ev=0 
+    speed_ev=252  
 
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    *pokemon_here*  
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
+    orbeetle   
+    moves=expandingforce,bugbuzz,protect,recover  
+    nature=modest   
+    ability=swarm   
+    held_item=cobblemon:sitrus_berry     
 
     hp_iv=31  
-    attack_iv=31 
+    attack_iv=0  
     defense_iv=31 
     special_attack_iv=31 
     special_defense_iv=31 
     speed_iv=31 
 
-    hp_ev=0 
+    hp_ev=248 
     attack_ev=0 
     defense_ev=0 
-    special_attack_ev=0  
-    special_defense_ev=0
-    speed_ev=0 
-
-    level=' + t.pokemon_level
-);
-q.party.add_by_properties('
-    *pokemon_here*  
-    moves= 
-    nature=  
-    ability=  
-    held_item=cobblemon:    
-
-    hp_iv=31  
-    attack_iv=31 
-    defense_iv=31 
-    special_attack_iv=31 
-    special_defense_iv=31 
-    speed_iv=31 
-
-    hp_ev=0 
-    attack_ev=0 
-    defense_ev=0 
-    special_attack_ev=0  
-    special_defense_ev=0
+    special_attack_ev=252  
+    special_defense_ev=8 
     speed_ev=0 
 
     level=' + t.pokemon_level

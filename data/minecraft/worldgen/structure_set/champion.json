@@ -1,0 +1,15 @@
+{
+	"structures": [
+		{
+			"structure": "minecraft:champion",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 70,
+		"separation": 15,
+		"spread_type": "triangular",
+		"salt": 557832
+	}
+} 

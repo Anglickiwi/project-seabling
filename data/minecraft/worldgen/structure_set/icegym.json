@@ -1,7 +1,7 @@
 {
 	"structures": [
 		{
-			"structure": "minecraft:normalgym",
+			"structure": "minecraft:icegym",
 			"weight": 1
 		}
 	],
@@ -10,6 +10,6 @@
 		"spacing": 70,
 		"separation": 15,
 		"spread_type": "triangular",
-		"salt": 55123
+		"salt": 6743
 	}
 } 

@@ -1,7 +1,7 @@
 {
 	"structures": [
 		{
-			"structure": "minecraft:normalgym",
+			"structure": "minecraft:elite44",
 			"weight": 1
 		}
 	],
@@ -10,6 +10,6 @@
 		"spacing": 70,
 		"separation": 15,
 		"spread_type": "triangular",
-		"salt": 55123
+		"salt": 9509876
 	}
 } 

@@ -10,7 +10,7 @@
       "displayName": "npc.variable.on_player_wins.name",
       "description": "npc.variable.on_player_wins.desc",
       "type": "TEXT",
-      "defaultValue": "q.run_command('give ' + q.player.username() + ' cobblemonpokemonbadges:boulder_badge');q.player.data.gyms_cleared = q.player.data.gyms_cleared + 1"},
+      "defaultValue": "q.player.data.morphia_defeated = q.player.data.morphia + 1; q.player.save_data(); q.player.data.gyms_defeated = q.player.data.gyms_defeated + 1;q.player.save_data(); q.run_command('give ' + q.player.username() + ' cobblemonpokemonbadges:boulder_badge');"},
     {
       "variableName": "on_player_loses",
       "displayName": "npc.variable.on_player_loses.name",

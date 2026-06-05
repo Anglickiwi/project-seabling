@@ -6,12 +6,17 @@
   ],
   "config": [
     {
-      "variableName": "challenge_distance",
-      "displayName": "cobblemon.npc.challenge_distance",
-      "description": "cobblemon.npc.challenge_distance.description",
-      "type": "NUMBER",
-      "defaultValue": "5"
-      
+      "variableName": "on_player_wins",
+      "displayName": "npc.variable.on_player_wins.name",
+      "description": "npc.variable.on_player_wins.desc",
+      "type": "TEXT",
+      "defaultValue": "q.run_command('give ' + q.player.username() + ' cobblemonpokemonbadges:boulder_badge');q.player.data.gyms_cleared = q.player.data.gyms_cleared + 1"},
+    {
+      "variableName": "on_player_loses",
+      "displayName": "npc.variable.on_player_loses.name",
+      "description": "npc.variable.on_player_loses.desc",
+      "type": "TEXT",
+      "defaultValue": ""
     }
   ],
   "names": [

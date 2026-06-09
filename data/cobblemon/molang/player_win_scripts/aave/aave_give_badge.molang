@@ -1,0 +1,3 @@
+q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:fog_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader Aave!"\']]');
+q.player.data.seabling_leader_aave_badge_given = true;
+q.player.save_data();

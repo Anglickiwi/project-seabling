@@ -121,7 +121,7 @@ q.party.add_by_properties('
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    amoounguss  
+    amoonguss  
     moves=spore,ragepowder,gigadrain,protect  
     nature=calm  
     ability=regenerator  

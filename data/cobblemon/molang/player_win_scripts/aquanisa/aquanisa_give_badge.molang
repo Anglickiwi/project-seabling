@@ -1,0 +1,3 @@
+q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:rain_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader Aquanisa!"\']]');
+q.player.data.seabling_leader_aquanisa_badge_given = true;
+q.player.save_data();

@@ -1,0 +1,105 @@
+{
+    "initializationAction": [
+        "q.npc.is_doing_activity('cobblemon:battling') ? q.dialogue.set_page('in_battle');",
+        "!q.player.data.seabling_leader_barry_defetead ? q.dialogue.set_page('intro1');",
+        "q.player.data.seabling_leader_barry_defetead && !q.player.data.seabling_leader_barry_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
+        "q.player.data.seabling_leader_barry_defetead && q.player.data.seabling_leader_barry_badge_given ? q.dialogue.set_page('rematch');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face(false);"
+        }
+    },
+    "pages": [
+        {
+            "id": "intro1",
+            "speaker": "npc",
+            "lines": [
+                "Challenger. Welcome to my most distinguished abode, I hope you being some fight with you."
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "intro2",
+            "speaker": "npc",
+            "lines": [
+                "My team has been itching for a good old scruffle, I hopw your willing to provide."
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "battle_prompt",
+            "speaker": "npc",
+            "lines": [
+                "Are you ready to get a bit frazzeled?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": "q.dialogue.set_page('battle_start');"
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "battle_start",
+            "speaker": "npc",
+            "lines": [
+                "Wonderful, let's get right to it than youngster!"
+            ],
+            "escapeAction": "0",
+            "input": [
+                "q.dialogue.close();",
+                "v.battle = q.npc.start_battle(q.player, 'double');"
+            ]
+        },
+        {
+            "id": "post_defeat_badge1",
+            "speaker": "npc",
+            "lines": [
+                "Well I'll be dammed, I have been completly outwitted in this scuffle. Serves me right for under estimating you."
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "post_defeat_badge2",
+            "speaker": "npc",
+            "lines": [
+                "You have earned the Balance Badge! Please come back another day, I am always itching to get some fighting in!"
+            ],
+            "input": [
+                "q.run_script('cobblemon:barry_give_badge');",  
+                "q.dialogue.close();"             
+            ]
+        },
+        {
+            "id": "rematch",
+            "speaker": "npc",
+            "lines": [
+                "Welcome back, I hope you have brought your best team, I will not lose again!"
+            ],
+            "input": "q.dialogue.set_page('battle_prompt');"
+        },
+        {
+            "id": "in_battle",
+            "speaker": "npc",
+            "lines": [
+                "Please give others the chance to battle me."
+            ],
+            "input": "q.dialogue.close();"
+        }
+    ]
+}

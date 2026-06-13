@@ -1,9 +1,9 @@
 {
     "initializationAction": [
         "q.npc.is_doing_activity('cobblemon:battling') ? q.dialogue.set_page('in_battle');",
-        "!q.player.data.seabling_leader_morphia_defetead ? q.dialogue.set_page('intro1');",
-        "q.player.data.seabling_leader_morphia_defetead && !q.player.data.seabling_leader_morphia_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
-        "q.player.data.seabling_leader_morphia_defetead && q.player.data.seabling_leader_morphia_badge_given ? q.dialogue.set_page('rematch');"
+        "!q.player.data.seabling_leader_ace_defetead ? q.dialogue.set_page('intro1');",
+        "q.player.data.seabling_leader_ace_defetead && !q.player.data.seabling_leader_ace_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
+        "q.player.data.seabling_leader_ace_defetead && q.player.data.seabling_leader_ace_badge_given ? q.dialogue.set_page('rematch');"
     ],
     "speakers": {
         "npc": {
@@ -19,7 +19,7 @@
             "id": "intro1",
             "speaker": "npc",
             "lines": [
-                "Challenger! I'm Morphia, the ground Gym Leader. I hope your ready to get buried!"
+                "Careful challanger, the fumes around here are highly toxic. Yet, you have no protective gear. Intreging."
             ],
             "input": "q.dialogue.next_page();"
         },
@@ -27,7 +27,7 @@
             "id": "intro2",
             "speaker": "npc",
             "lines": [
-                "My ground Pokémon are ready to dig your team six feet under! You sure you want to contuine?"
+                "My poison Pokémon are ready to melt your team. Are you sure you can last long enough to finsih this battle?"
             ],
             "input": "q.dialogue.next_page();"
         },
@@ -35,7 +35,7 @@
             "id": "battle_prompt",
             "speaker": "npc",
             "lines": [
-                "Ready to get buried?"
+                "Ready to be melted?"
             ],
             "input": {
                 "type": "option",
@@ -58,7 +58,7 @@
             "id": "battle_start",
             "speaker": "npc",
             "lines": [
-                "Hope you brought a shovel to dig yourself out then!"
+                "Lets get down to bussiness down."
             ],
             "escapeAction": "0",
             "input": [
@@ -70,7 +70,7 @@
             "id": "post_defeat_badge1",
             "speaker": "npc",
             "lines": [
-                "I have been buried in my own attempt to bury you! Welp, thankfully I carry a shovel!"
+                "It's rare that someone can live through these battles, even when being splashed with acid."
             ],
             "input": "q.dialogue.next_page();"
         },
@@ -78,10 +78,10 @@
             "id": "post_defeat_badge2",
             "speaker": "npc",
             "lines": [
-                "You have earned the Boulder Badge! Come back any time to rematch me!"
+                "You have earned the Soul Badge. If you come back, please wear protective gear."
             ],
             "input": [
-                "q.run_script('cobblemon:morphia_give_badge');",  
+                "q.run_script('cobblemon:ace_give_badge');",  
                 "q.dialogue.close();"             
             ]
         },
@@ -89,7 +89,7 @@
             "id": "rematch",
             "speaker": "npc",
             "lines": [
-                "Hah! Well done, returning here! Since you came all this way, we should have a battle! Hah!"
+                "You cam back? And still without protective gear? You must really want to battle."
             ],
             "input": "q.dialogue.set_page('battle_prompt');"
         },

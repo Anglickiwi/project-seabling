@@ -1,9 +1,9 @@
 {
     "initializationAction": [
         "q.npc.is_doing_activity('cobblemon:battling') ? q.dialogue.set_page('in_battle');",
-        "!q.player.data.seabling_leader_morphia_defetead ? q.dialogue.set_page('intro1');",
-        "q.player.data.seabling_leader_morphia_defetead && !q.player.data.seabling_leader_morphia_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
-        "q.player.data.seabling_leader_morphia_defetead && q.player.data.seabling_leader_morphia_badge_given ? q.dialogue.set_page('rematch');"
+        "!q.player.data.seabling_leader_aave_defetead ? q.dialogue.set_page('intro1');",
+        "q.player.data.seabling_leader_aave_defetead && !q.player.data.seabling_leader_aave_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
+        "q.player.data.seabling_leader_aave_defetead && q.player.data.seabling_leader_aave_badge_given ? q.dialogue.set_page('rematch');"
     ],
     "speakers": {
         "npc": {
@@ -19,7 +19,7 @@
             "id": "intro1",
             "speaker": "npc",
             "lines": [
-                "Challenger! I'm Morphia, the ground Gym Leader. I hope your ready to get buried!"
+                "Welcome challanger to my humble abode. Please don't mind my friends, they have a habbit of appering and disappering."
             ],
             "input": "q.dialogue.next_page();"
         },
@@ -27,7 +27,7 @@
             "id": "intro2",
             "speaker": "npc",
             "lines": [
-                "My ground Pokémon are ready to dig your team six feet under! You sure you want to contuine?"
+                "My ghost Pokémon are ready to haunt your gym challange. Are you sure your ready for the consequences of this battle?"
             ],
             "input": "q.dialogue.next_page();"
         },
@@ -35,7 +35,7 @@
             "id": "battle_prompt",
             "speaker": "npc",
             "lines": [
-                "Ready to get buried?"
+                "Ready to be haunted?"
             ],
             "input": {
                 "type": "option",
@@ -58,7 +58,7 @@
             "id": "battle_start",
             "speaker": "npc",
             "lines": [
-                "Hope you brought a shovel to dig yourself out then!"
+                "Well I warned you, please don't blame the spirts for your failure."
             ],
             "escapeAction": "0",
             "input": [
@@ -70,7 +70,7 @@
             "id": "post_defeat_badge1",
             "speaker": "npc",
             "lines": [
-                "I have been buried in my own attempt to bury you! Welp, thankfully I carry a shovel!"
+                "It's rare that my friends cheer for anothers victory over me. Truely, this is wonderful to see."
             ],
             "input": "q.dialogue.next_page();"
         },
@@ -78,10 +78,10 @@
             "id": "post_defeat_badge2",
             "speaker": "npc",
             "lines": [
-                "You have earned the Boulder Badge! Come back any time to rematch me!"
+                "You have earned the Fog Badge. Next time you come by, please bring some of your ghost friends, my friends seem to like you."
             ],
             "input": [
-                "q.run_script('cobblemon:morphia_give_badge');",  
+                "q.run_script('cobblemon:aave_give_badge');",  
                 "q.dialogue.close();"             
             ]
         },
@@ -89,7 +89,7 @@
             "id": "rematch",
             "speaker": "npc",
             "lines": [
-                "Hah! Well done, returning here! Since you came all this way, we should have a battle! Hah!"
+                "Welcome back, do your friends want to play?"
             ],
             "input": "q.dialogue.set_page('battle_prompt');"
         },

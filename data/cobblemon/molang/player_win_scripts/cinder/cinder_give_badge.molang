@@ -1,0 +1,3 @@
+q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:heat_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader Cinder!"\']]');
+q.player.data.seabling_leader_cinder_badge_given = true;
+q.player.save_data();

@@ -1,0 +1,105 @@
+{
+    "initializationAction": [
+        "q.npc.is_doing_activity('cobblemon:battling') ? q.dialogue.set_page('in_battle');",
+        "!q.player.data.seabling_leader_cooper_defetead ? q.dialogue.set_page('intro1');",
+        "q.player.data.seabling_leader_cooper_defetead && !q.player.data.seabling_leader_cooper_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
+        "q.player.data.seabling_leader_cooper_defetead && q.player.data.seabling_leader_cooper_badge_given ? q.dialogue.set_page('rematch');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face(false);"
+        }
+    },
+    "pages": [
+        {
+            "id": "intro1",
+            "speaker": "npc",
+            "lines": [
+                "Challenger! I'm Cooper, the Steel Gym Leader. I hope your ready to get punctured!"
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "intro2",
+            "speaker": "npc",
+            "lines": [
+                "My steel Pokémon are ready to flatten your team! You sure you want to contuine?"
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "battle_prompt",
+            "speaker": "npc",
+            "lines": [
+                "Ready to get punctured?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": "q.dialogue.set_page('battle_start');"
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "battle_start",
+            "speaker": "npc",
+            "lines": [
+                "Your fate has already be decided!"
+            ],
+            "escapeAction": "0",
+            "input": [
+                "q.dialogue.close();",
+                "v.battle = q.npc.start_battle(q.player, 'double');"
+            ]
+        },
+        {
+            "id": "post_defeat_badge1",
+            "speaker": "npc",
+            "lines": [
+                "I have been steamrolled!"
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "post_defeat_badge2",
+            "speaker": "npc",
+            "lines": [
+                "You have earned the Mine Badge! Come back any time to rematch me!"
+            ],
+            "input": [
+                "q.run_script('cobblemon:cooper_give_badge');",  
+                "q.dialogue.close();"             
+            ]
+        },
+        {
+            "id": "rematch",
+            "speaker": "npc",
+            "lines": [
+                "Hah! Well done, returning here! Since you came all this way, we should have a battle! Hah!"
+            ],
+            "input": "q.dialogue.set_page('battle_prompt');"
+        },
+        {
+            "id": "in_battle",
+            "speaker": "npc",
+            "lines": [
+                "Please give others the chance to battle me."
+            ],
+            "input": "q.dialogue.close();"
+        }
+    ]
+}

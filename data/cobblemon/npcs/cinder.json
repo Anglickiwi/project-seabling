@@ -4,14 +4,20 @@
   "presets": [
     "cobblemon:standard_npc"
   ],
-  "config": [
+"config": [
     {
-      "variableName": "challenge_distance",
-      "displayName": "cobblemon.npc.challenge_distance",
-      "description": "cobblemon.npc.challenge_distance.description",
-      "type": "NUMBER",
-      "defaultValue": "5"
-      
+      "variableName": "on_player_wins",
+      "displayName": "npc.variable.on_player_wins.name",
+      "description": "npc.variable.on_player_wins.desc",
+      "type": "TEXT",
+      "defaultValue": "q.run_script('cobblemon:cinder_defeat');"
+    },
+    {
+      "variableName": "on_player_loses",
+      "displayName": "npc.variable.on_player_loses.name",
+      "description": "npc.variable.on_player_loses.desc",
+      "type": "TEXT",
+      "defaultValue": ""
     }
   ],
   "names": [
@@ -19,7 +25,7 @@
   ],
   "interaction": {
     "type": "dialogue",
-    "dialogue": "cobblemon:npc-example"
+    "dialogue": "cobblemon:cinder-interaction"
   },
   "battleConfiguration": {
     "canChallenge": true

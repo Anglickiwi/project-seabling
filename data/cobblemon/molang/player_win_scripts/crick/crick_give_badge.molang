@@ -1,0 +1,3 @@
+q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:hive_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader Crick!"\']]');
+q.player.data.seabling_leader_crick_badge_given = true;
+q.player.save_data();

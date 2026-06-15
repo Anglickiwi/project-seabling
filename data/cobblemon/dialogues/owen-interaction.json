@@ -1,0 +1,105 @@
+{
+    "initializationAction": [
+        "q.npc.is_doing_activity('cobblemon:battling') ? q.dialogue.set_page('in_battle');",
+        "!q.player.data.seabling_leader_owen_defetead ? q.dialogue.set_page('intro1');",
+        "q.player.data.seabling_leader_owen_defetead && !q.player.data.seabling_leader_owen_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
+        "q.player.data.seabling_leader_owen_defetead && q.player.data.seabling_leader_owen_badge_given ? q.dialogue.set_page('rematch');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face(false);"
+        }
+    },
+    "pages": [
+        {
+            "id": "intro1",
+            "speaker": "npc",
+            "lines": [
+                "Welcome trainer, I am owen, the Fighting gym leader."
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "intro2",
+            "speaker": "npc",
+            "lines": [
+                "Once you are ready, come fight me."
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "battle_prompt",
+            "speaker": "npc",
+            "lines": [
+                "Ready?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": "q.dialogue.set_page('battle_start');"
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "battle_start",
+            "speaker": "npc",
+            "lines": [
+                "Lets go then"
+            ],
+            "escapeAction": "0",
+            "input": [
+                "q.dialogue.close();",
+                "v.battle = q.npc.start_battle(q.player, 'double');"
+            ]
+        },
+        {
+            "id": "post_defeat_badge1",
+            "speaker": "npc",
+            "lines": [
+                "!!!!!"
+            ],
+            "input": "q.dialogue.next_page();"
+        },
+        {
+            "id": "post_defeat_badge2",
+            "speaker": "npc",
+            "lines": [
+                "I did not expect defeat. Here is proof of your win over me."
+            ],
+            "input": [
+                "q.run_script('cobblemon:owen_give_badge');",  
+                "q.dialogue.close();"             
+            ]
+        },
+        {
+            "id": "rematch",
+            "speaker": "npc",
+            "lines": [
+                "You wish to rechallange me?"
+            ],
+            "input": "q.dialogue.set_page('battle_prompt');"
+        },
+        {
+            "id": "in_battle",
+            "speaker": "npc",
+            "lines": [
+                "Please give others the chance to battle me."
+            ],
+            "input": "q.dialogue.close();"
+        }
+    ]
+}

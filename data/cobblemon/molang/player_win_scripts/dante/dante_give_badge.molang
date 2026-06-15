@@ -1,0 +1,3 @@
+q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:dark_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader dante!"\']]');
+q.player.data.seabling_leader_dante_badge_given = true;
+q.player.save_data();

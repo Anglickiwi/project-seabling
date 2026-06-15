@@ -4,22 +4,28 @@
   "presets": [
     "cobblemon:standard_npc"
   ],
-  "config": [
+"config": [
     {
-      "variableName": "challenge_distance",
-      "displayName": "cobblemon.npc.challenge_distance",
-      "description": "cobblemon.npc.challenge_distance.description",
-      "type": "NUMBER",
-      "defaultValue": "5"
-      
+      "variableName": "on_player_wins",
+      "displayName": "npc.variable.on_player_wins.name",
+      "description": "npc.variable.on_player_wins.desc",
+      "type": "TEXT",
+      "defaultValue": "q.run_script('cobblemon:dante_defeat');"
+    },
+    {
+      "variableName": "on_player_loses",
+      "displayName": "npc.variable.on_player_loses.name",
+      "description": "npc.variable.on_player_loses.desc",
+      "type": "TEXT",
+      "defaultValue": ""
     }
   ],
   "names": [
-    "Barry"
+    "Dante"
   ],
   "interaction": {
     "type": "dialogue",
-    "dialogue": "cobblemon:npc-example"
+    "dialogue": "cobblemon:dante-interaction"
   },
   "battleConfiguration": {
     "canChallenge": true

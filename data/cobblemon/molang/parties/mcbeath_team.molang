@@ -97,7 +97,7 @@ q.party.add_by_properties('
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    zygrade
+    zygarde
     percent_cells=complete
     power-construct=true 
     moves=thousandarrows,extremespeed,dragondance,coreenforcer  
@@ -123,7 +123,7 @@ q.party.add_by_properties('
 );
 q.party.add_by_properties('
     garchomp  
-    mega_evolution=mega_z
+    mega_evolution=mega
     moves=earthquake,frustration,bodyslam,ironhead  
     nature=jolly   
     ability=sandforce  

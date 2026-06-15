@@ -1,0 +1,3 @@
+q.player.data.seabling_elite4_blade_defetead = true;
+q.player.data.seabling_elite4_badges = q.player.data.seabling_elite4_badges + 1;
+q.player.save_data();

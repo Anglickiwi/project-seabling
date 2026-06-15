@@ -37,6 +37,7 @@
   "hideNameTag": false,
   "isMovable":false,
   "isInvulnerable": true,
+    "battleTheme": "seabling:battle.trainers.gymleaders",
   "party": {
     "type": "script",
     "script": "cobblemon:owen_team",

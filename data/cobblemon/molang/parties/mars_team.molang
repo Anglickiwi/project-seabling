@@ -98,7 +98,7 @@ q.party.add_by_properties('
     level=' + t.pokemon_level
 );
 q.party.add_by_properties('
-    gyaradose  
+    gyarados  
     moves=avalanche,dragondance,earthquake,waterfall  
     nature=adamant  
     ability=intimidate  

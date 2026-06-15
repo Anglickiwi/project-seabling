@@ -1,9 +1,9 @@
 {
     "initializationAction": [
         "q.npc.is_doing_activity('cobblemon:battling') ? q.dialogue.set_page('in_battle');",
-        "!q.player.data.seabling_leader_blank_defetead ? q.dialogue.set_page('intro1');",
-        "q.player.data.seabling_leader_blank_defetead && !q.player.data.seabling_leader_blank_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
-        "q.player.data.seabling_leader_blank_defetead && q.player.data.seabling_leader_blank_badge_given ? q.dialogue.set_page('rematch');"
+        "!q.player.data.seabling_leader_mars_defetead ? q.dialogue.set_page('intro1');",
+        "q.player.data.seabling_leader_mars_defetead && !q.player.data.seabling_leader_mars_badge_given ? q.dialogue.set_page('post_defeat_badge1');",
+        "q.player.data.seabling_leader_mars_defetead && q.player.data.seabling_leader_mars_badge_given ? q.dialogue.set_page('rematch');"
     ],
     "speakers": {
         "npc": {
@@ -19,7 +19,7 @@
             "id": "intro1",
             "speaker": "npc",
             "lines": [
-                "Welcome trainer, I am blank, the types gym leader."
+                "Welcome trainer, I am mars, the Flying gym leader."
             ],
             "input": "q.dialogue.next_page();"
         },
@@ -81,7 +81,7 @@
                 "I did not expect defeat. Here is proof of your win over me."
             ],
             "input": [
-                "q.run_script('cobblemon:blank_give_badge');",  
+                "q.run_script('cobblemon:mars_give_badge');",  
                 "q.dialogue.close();"             
             ]
         },

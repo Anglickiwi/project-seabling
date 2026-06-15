@@ -1,0 +1,3 @@
+q.player.data.seabling_champion_kiwi_defetead = true;
+q.player.data.seabling_champion_badges = q.player.data.seabling_champion_badges + 1;
+q.player.save_data();

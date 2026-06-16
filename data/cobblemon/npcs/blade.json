@@ -37,7 +37,7 @@
   "hideNameTag": false,
   "isMovable":false,
   "isInvulnerable": true,
-  "battleTheme": "seabling:battle.trainers.blade_us_um_ultra_necromza",
+  "battleTheme": "seabling:battle.trainers.blade_us_um_ultra_necromza", 
   "party": {
     "type": "script",
     "script": "cobblemon:blade_team",

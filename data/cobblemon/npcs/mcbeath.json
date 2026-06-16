@@ -37,7 +37,7 @@
   "hideNameTag": false,
   "isMovable":false,
   "isInvulnerable": true,
-  "battleTheme": "seabling:battle.trainers.mcbeath_volo",
+  "battleTheme": "seabling:battle.trainers.mcbeath_volo", 
   "party": {
     "type": "script",
     "script": "cobblemon:mcbeath_team",

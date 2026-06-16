@@ -1,0 +1,35 @@
+{
+    "battle.trainers.anunnaki_oras_deo": {
+        "sounds":[{"name":"seabling:trainers/anunnaki_oras_deo","volume":0.5}]
+    },
+
+    "battle.trainers.giovanni_sv_champion_kieran": {
+        "sounds":[{"name":"seabling:trainers/giovanni_sv_champion_kieran","volume":0.5}]
+    },
+
+    "battle.trainers.mcbeath_volo": {
+        "sounds":[{"name":"seabling:trainers/mcbeath_volo","volume":0.5}]
+    },
+
+    "battle.trainers.blade_us_um_ultra_necromza": {
+        "sounds":[{"name":"seabling:trainers/blade_us_um_ultra_necromza","volume":0.5}]
+    },
+
+
+    "battle.trainers.champion_kiwi_sv": {
+        "sounds":[{"name":"seabling:trainers/champion_kiwi_sv","volume":0.5}]
+    },
+
+
+    "battle.trainers.gymleaders": {
+        "sounds":[{"name":"seabling:trainers/gymleaders/gym_leader_bw","volume":0.5},
+                  {"name":"seabling:trainers/gymleaders/gym_leader_or_as","volume":0.5},
+                  {"name":"seabling:trainers/gymleaders/gym_leader_ss","volume":0.5},
+                  {"name":"seabling:trainers/gymleaders/gym_leader_sv","volume":0.5}
+    ]
+        
+    }
+
+    
+
+}

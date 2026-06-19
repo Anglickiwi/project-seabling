@@ -1,3 +1,3 @@
-q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:legend_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Elite 4 Member Anunnaki!"\']]');
+q.run_command('give ' + q.player.username + ' pastas_cobblemon_badges:basic_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Elite 4 Member Anunnaki!"\']]');
 q.player.data.seabling_elite4_anunnaki_badge_given = true;
 q.player.save_data();

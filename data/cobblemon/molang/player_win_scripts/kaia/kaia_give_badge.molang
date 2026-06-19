@@ -1,3 +1,3 @@
-q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:fairy_badge_kalos[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader kaia!"\']]');
+q.run_command('give ' + q.player.username + ' pastas_cobblemon_badges:fairy_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader kaia!"\']]');
 q.player.data.seabling_leader_kaia_badge_given = true;
 q.player.save_data();

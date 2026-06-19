@@ -1,3 +1,3 @@
-q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:rumble_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader owen!"\']]');
+q.run_command('give ' + q.player.username + ' pastas_cobblemon_badges:fighting_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader owen!"\']]');
 q.player.data.seabling_leader_owen_badge_given = true;
 q.player.save_data();

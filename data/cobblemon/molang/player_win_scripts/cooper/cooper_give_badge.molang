@@ -1,3 +1,3 @@
-q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:mine_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader Cooper!"\']]');
+q.run_command('give ' + q.player.username + ' pastas_cobblemon_badges:steel_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader Cooper!"\']]');
 q.player.data.seabling_leader_cooper_badge_given = true;
 q.player.save_data();

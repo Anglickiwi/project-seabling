@@ -1,3 +1,3 @@
-q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:jet_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader mars!"\']]');
+q.run_command('give ' + q.player.username + ' pastas_cobblemon_badges:flying_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader mars!"\']]');
 q.player.data.seabling_leader_mars_badge_given = true;
 q.player.save_data();

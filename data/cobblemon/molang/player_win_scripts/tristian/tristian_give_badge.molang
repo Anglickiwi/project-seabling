@@ -1,3 +1,3 @@
-q.run_command('give ' + q.player.username + ' cobblemonpokemonbadges:dynamo_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader tristian!"\']]');
+q.run_command('give ' + q.player.username + ' pastas_cobblemon_badges:electric_badge[lore=[\'"Given to ' + q.player.username + ' for defeating Gym Leader tristian!"\']]');
 q.player.data.seabling_leader_tristian_badge_given = true;
 q.player.save_data();
